@@ -1,0 +1,14 @@
+<%
+  text =<<~TEXT
+    # 大見出し
+    ## 中見出し
+    ### 小見出し
+    内容を書く
+
+    ```rb
+      puts "Hello world"
+      class UsersController
+    ```
+  TEXT
+ %>
+<%= markdown(text).html_safe %>
